@@ -5,6 +5,7 @@ module.exports = class DepthCalculator {
   calculateDepth(arr) {
    if((arr.some(item => Array.isArray(item)) === false)) {
         let result = this.len;
+        // i do not understand this moment very well
         this.len = 1;
         return result;
    } else {
